@@ -7,6 +7,7 @@ import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ListIcon from '@mui/icons-material/List';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -46,10 +47,12 @@ const Navbar = () => {
           
         </div>
         <div className='item'>
+          <Link to='/login' style={{textDecoration: "none"}}>
           <img 
             src='https://media.gettyimages.com/photos/beauty-portrait-of-young-woman-picture-id1309405076?s=612x612'
             alt='random'
-            className='avatar'/> 
+            className='avatar'/>
+            </Link>
         </div>
       </div>
     </div>
